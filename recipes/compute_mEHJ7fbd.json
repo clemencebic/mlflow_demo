@@ -4,7 +4,8 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "mlflow-catboost"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -40,11 +41,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663083619518
+    "lastModifiedOn": 1663083638483
   },
   "creationTag": {
     "versionNumber": 0,
