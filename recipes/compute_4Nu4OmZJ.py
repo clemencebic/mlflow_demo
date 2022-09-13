@@ -39,3 +39,9 @@ for v in sm.list_versions():
 sm_version = sm.import_mlflow_version_from_path(version_id=version_id,
                                                 path=model_dir,
                                                 code_env_name="mlflow-catboost")
+
+# Evaluate the version using the previously created Dataset
+sm_version.set_core_metadata(target_column_name="y",
+                             class_labels=["no", "yes"],
+                             get_features_from_dataset="eval_data")
+sm_version.evaluate("eval_data")
