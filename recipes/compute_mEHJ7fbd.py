@@ -10,7 +10,7 @@ import mlflow.catboost
 from catboost import CatBoostClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
-from datetime import datetimeu
+from datetime import datetime
 
 # Read recipe inputs
 training_data = dataiku.Dataset("training_data")
