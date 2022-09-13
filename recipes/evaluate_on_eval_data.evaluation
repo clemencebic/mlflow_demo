@@ -1,7 +1,5 @@
 {
-  "outputs": [
-    "prediction_correct"
-  ],
+  "outputs": [],
   "perGPUMemoryFraction": 0.5,
   "sqlPipelineParams": {
     "pipelineAllowMerge": true,
@@ -17,7 +15,7 @@
   "pastTimestepsToInclude": -1,
   "dontComputePerformance": false,
   "outputProbaPercentiles": false,
-  "outputProbabilities": true,
+  "outputProbabilities": false,
   "forceOriginalEngine": false,
   "treatmentRatio": 0,
   "individualExplanationParams": {
