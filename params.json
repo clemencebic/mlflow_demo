@@ -130,7 +130,7 @@
     },
     "dkuProperties": []
   },
-  "name": "MLFlow_LVMH",
+  "name": "MLFlow demo",
   "imgPattern": 2,
   "metrics": {
     "probes": [],
@@ -187,11 +187,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663082153978
+    "lastModifiedOn": 1663082171998
   },
   "creationTag": {
     "versionNumber": 0,
