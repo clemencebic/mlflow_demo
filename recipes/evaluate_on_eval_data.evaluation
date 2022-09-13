@@ -70,16 +70,7 @@
   "metrics": [
     "precision",
     "recall",
-    "auc",
-    "f1",
-    "accuracy",
-    "mcc",
-    "hammingLoss",
-    "logLoss",
-    "lift",
-    "calibrationLoss",
-    "customScore",
-    "costMatrixGain"
+    "auc"
   ],
   "batchSize": 100,
   "outputExplanations": false,
