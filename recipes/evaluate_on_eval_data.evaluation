@@ -7,7 +7,7 @@
     "pipelineAllowMerge": true,
     "pipelineAllowStart": true
   },
-  "modelVersionId": "",
+  "modelVersionId": "v01",
   "backendType": "PY_MEMORY",
   "filterInputColumns": false,
   "useGPU": false,
