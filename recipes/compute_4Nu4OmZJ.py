@@ -23,10 +23,14 @@ else:
                                             prediction_type=DSSPredictionMLTaskSettings.PredictionTypes.BINARY)
     sm_id = sm.id
     print("SavedModel not found, created new one with id {}".format(sm_id))
-    
-version_id = "v01" # Change this to iterate to a new version
 
 # Create version in SavedModel
+
+version_id = "v01" # Change this to iterate to a new version
+
+model_version = 1
+model_dir = "{}/catboost-uci-bank-V{}".format(dataiku.Folder("catboost_models").get_path(),model_version)
+
 for v in sm.list_versions():
     if v["id"] == version_id:
         raise Exception("SavedModel version already exists! Choose a new version name.")
