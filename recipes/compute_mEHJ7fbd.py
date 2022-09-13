@@ -34,8 +34,8 @@ model.fit(X_train, y_train,
 # Save the model to a managed folder
 catboost_models_folder = dataiku.Folder("catboost_models")
 catboost_models_folder_dir = catboost_models_folder.get_path()
-ts = datetime.now().strftime("%Y%m%d-%H%M%S")
-model_dir = "{}/catboost-uci-bank-{}".format(catboost_models_folder_dir,ts)
+version=1
+model_dir = "{}/catboost-uci-bank-V{}".format(catboost_models_folder_dir,version)
 
 mlflow.catboost.save_model(model, model_dir)
 print("Model saved at {} !".format(os.path.abspath(model_dir)))
