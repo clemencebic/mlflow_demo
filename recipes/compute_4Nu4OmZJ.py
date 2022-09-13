@@ -38,4 +38,4 @@ for v in sm.list_versions():
 
 sm_version = sm.import_mlflow_version_from_path(version_id=version_id,
                                                 path=model_dir,
-                                                code_env_name="mlflow_catboost")
+                                                code_env_name="mlflow-catboost")
