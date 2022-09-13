@@ -4,7 +4,6 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 from dataikuapi.dss.ml import DSSPredictionMLTaskSettings
 
-
 client = dataiku.api_client()
 project = client.get_default_project()
 
