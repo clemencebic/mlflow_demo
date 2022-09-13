@@ -26,10 +26,24 @@ else:
     print("SavedModel not found, created new one with id {}".format(sm_id))
     
 
+# Change the following values to match your setup !
 
+version_id = "v01" # Change this to iterate to a new version
 
+# Create version in SavedModel
 
+for v in sm.list_versions():
+    if v["id"] == version_id:
+        raise Exception("SavedModel version already exists! Choose a new version name.")
 
-# Write recipe outputs
-test_folder = dataiku.Folder("i3nlEc79")
-test_folder_info = test_folder.get_info()
+model_version=1
+model_dir = "{}/catboost-uci-bank-V{}".format(dataiku.Folder("catboost_models").get_path(),model_version)
+
+sm_version = sm.import_mlflow_version_from_path(version_id=version_id,
+                                                path=model_dir,
+                                                code_env_name="mlflow-catboost")
+# Evaluate the version using the previously created Dataset
+sm_version.set_core_metadata(target_column_name="y",
+                             class_labels=["no", "yes"],
+                             get_features_from_dataset="eval_data")
+sm_version.evaluate("eval_data")
