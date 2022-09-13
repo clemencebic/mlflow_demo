@@ -14,7 +14,7 @@ from datetime import datetime
 
 # Read recipe inputs
 training_data = dataiku.Dataset("training_data")
-training_data_df = training_data.get_dataframe()
+df = training_data.get_dataframe()
 
 cat_cols= ["job", "marital", "education", "default", "housing","loan", "month"]
 cont_cols= ["age", "balance", "day", "duration", "campaign"]
