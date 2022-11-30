@@ -2,7 +2,7 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
-import numpy as np
+import math
 
 # Read recipe inputs
 eval_data = dataiku.Dataset("eval_data")
