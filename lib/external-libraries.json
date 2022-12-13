@@ -4,6 +4,10 @@
       "remote": "git@github.com:clemencebic/git-integration-dss.git",
       "checkout": "refs/heads/main",
       "remotePath": "",
+      "lastHash": "d3b3dc12cb1a6833ae8b046832f53a38e0a42f19",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
       "isDirty": false
     }
   },
