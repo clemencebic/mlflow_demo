@@ -4,11 +4,11 @@
       "remote": "git@github.com:clemencebic/git-integration-dss.git",
       "checkout": "refs/heads/main",
       "remotePath": "",
-      "lastHash": "40f20984adff58bd9bf8ad7e47513660633adefe",
+      "lastHash": "b1b6668f97219860d56640e562430bdaec1ac99b",
       "conflictingFiles": [],
       "resolvedFiles": [],
       "faultyHash": "",
-      "isDirty": true
+      "isDirty": false
     }
   },
   "pythonPath": [
