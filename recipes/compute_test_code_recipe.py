@@ -20,5 +20,6 @@ test_code_recipe_df = eval_data_df # For this sample code, simply copy input to 
 
 # Write recipe outputs
 # Dataset test_code_recipe renamed to test_code_recipe_change by admin on 2023-01-24 11:53:10
-test_code_recipe = dataiku.Dataset("test_code_recipe_change")
+# Dataset test_code_recipe_change renamed to test_code_recipe by admin on 2023-01-24 11:53:43
+test_code_recipe = dataiku.Dataset("test_code_recipe")
 test_code_recipe.write_with_schema(test_code_recipe_df)
