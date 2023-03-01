@@ -9,6 +9,32 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
+  "bundleExporterSettings": {
+    "exportOptions": {
+      "exportUploads": false,
+      "exportManagedFS": false,
+      "exportAnalysisModels": false,
+      "exportSavedModels": false,
+      "exportManagedFolders": false,
+      "exportModelEvaluationStores": false,
+      "exportProjectResources": true,
+      "exportLabelingTasks": false,
+      "exportAllInputDatasets": false,
+      "exportAllDatasets": false,
+      "exportAllInputManagedFolders": false,
+      "exportGitRepository": false,
+      "exportInsightsData": false,
+      "useManualPluginsInfo": false,
+      "includedDatasetsData": [],
+      "includedSavedModels": [],
+      "includedModelEvaluationStores": [],
+      "includedManagedFolders": [],
+      "includedCodeStudios": [],
+      "includedLabelingTasks": [],
+      "shareAllInputDatasets": false,
+      "exportForeignObjectsReferences": true
+    }
+  },
   "owner": "admin",
   "permissionsVersion": "V2",
   "permissions": [],
@@ -118,6 +144,7 @@
         },
         "scaling": {
           "initialReplicas": 1,
+          "progressDeadlineSeconds": 600,
           "hpa": false,
           "hpaTargetCPUPercent": 0,
           "hpaMetrics": [],
@@ -125,7 +152,9 @@
           "hpaMaxPods": 0,
           "hpaAnnotations": []
         },
-        "deploymentModifier": {}
+        "deploymentModifier": {
+          "config": {}
+        }
       }
     },
     "dkuProperties": []
@@ -187,11 +216,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1671698689767
+    "lastModifiedOn": 1677667248676
   },
   "creationTag": {
     "versionNumber": 0,
