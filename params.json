@@ -160,7 +160,7 @@
     },
     "dkuProperties": []
   },
-  "name": "MLFlow demo",
+  "name": "MLFlow demo (demo_branching)",
   "imgPattern": 2,
   "metrics": {
     "probes": [],
@@ -217,11 +217,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1681379449913
+    "lastModifiedOn": 1681379454805
   },
   "creationTag": {
     "versionNumber": 0,
@@ -231,7 +231,7 @@
     "lastModifiedOn": 1646850200952
   },
   "description": "This project shows you how to train and export a model to the flow with MLFlow.\n\nTo use it, go on the \u0027Notebooks\u0027 tab, then open the \u0027Train and save model with MLFlow\u0027 notebook. Follow the steps desribed in the notebook. **Be carefull to create the right code env as described in Step 1**.\n\nOnce the model is trained, you can go to the flow, click on the new Saved Model and explore visually the results of the evaluation.\n",
-  "shortDesc": "The project *MLFlow_LVMH* was created by Administrator on Mar 09th 2022",
+  "shortDesc": "The project *MLFlow_LVMH* was created by Administrator on Mar 09th 2022\nThe project *MLFLOW_DEMO_DEMO_BRANCHING* was copied from *MLFLOW_DEMO* by Administrator on avr. 13th 2023",
   "tags": [
     "imported",
     "duplicated"
