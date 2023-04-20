@@ -50,7 +50,7 @@
       "shareToWorkspaces": true,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
-      "manageExposedElements": true,
+      "manageExposedElements": false,
       "manageAdditionalDashboardUsers": false,
       "executeApp": false
     }
@@ -234,11 +234,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682006720869
+    "lastModifiedOn": 1682006762250
   },
   "creationTag": {
     "versionNumber": 0,
