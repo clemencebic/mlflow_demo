@@ -18,7 +18,7 @@ df = training_data.get_dataframe()
 
 cat_cols= ["job", "marital", "education", "default", "housing","loan", "month"]
 cont_cols= ["age", "balance", "day", "duration", "campaign"]
-target= ["y"]
+target= ["w"]
 
 # Train a catboost model on training data
 cat_col_idx = [df.columns.get_loc(c) for c in cat_cols]
