@@ -14,6 +14,8 @@ from datetime import datetime
 
 # add new comments for demo
 
+#add new comment for merge
+
 # Read recipe inputs
 training_data = dataiku.Dataset("training_data")
 df = training_data.get_dataframe()
